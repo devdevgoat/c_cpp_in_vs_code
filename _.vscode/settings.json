@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    "terminal.integrated.shell.windows": "bash.exe",
+    // Use this to keep bash from doing a `cd $HOME`
+    "terminal.integrated.env.windows": { "CHERE_INVOKING": "1" },
+    "terminal.integrated.shellArgs.windows": [ "--login" ]
+}

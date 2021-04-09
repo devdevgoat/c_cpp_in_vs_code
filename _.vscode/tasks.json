@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build dir",
+        "type": "shell",
+        "command": "mkdir",
+        "args": ["-p", "build"],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        }
+      },
+      {
+        "label": "C/C++: g++.exe build active file",
+        "type": "shell",
+        "command": "g++.exe",
+        "args": ["-g", "*.c", "-o", "build/${fileBasenameNoExtension}.exe"],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": ["$gcc"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "dependsOn":["build dir"]
+    }
+    ]
+  }
